@@ -1,25 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './components/Header'
+import Sidebar from './components/Sidebar'
+import './App.css'
+import {BrowserRouter as  Route,Router,Switch} from 'react-router-dom'
+
+import { createBrowserHistory } from 'history'
+import AddFriends from './components/AddFriends'
+import ShowAllFriends from './components/ShowAllFriends'
+import Profile from './components/Profile'
+
+const newHistory = createBrowserHistory();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router history={newHistory}>
+    <div>
+      <Switch>
+
+      <Route path='/friends'>
+
+          <Header/>
+      <div className='container-divide'>
+        <Sidebar/>
+        <AddFriends/>
+      </div>
+      
+      </Route>
+      
+      <Route path='/showAllFriends'>
+        <Header/>
+        <div className='container-divide'>
+          <Sidebar/>
+          <ShowAllFriends/>         
+        </div>
+      </Route>
+
+
+        <Route path='/'>
+      <Header/>
+      <div className='container-divide'>
+        <Sidebar/>
+        <Profile/>
+      </div>
+      </Route>
+
+
+      </Switch>
     </div>
-  );
+    </Router>
+  )
 }
 
-export default App;
+export default App

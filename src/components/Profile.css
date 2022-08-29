@@ -1,0 +1,53 @@
+.about{
+    margin-right: 20px;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+.profile-title{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.profilePic{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
+    border-radius: 50%;
+}
+.aboutHeader{
+    display: flex;
+}
+.profileName{
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.nameDesc{
+    display: block;
+}
+.desc{
+    margin-left: 15px;
+}
+.looking-text,.about-text,.skill-title,.role-title{
+    margin-left: 25px;
+    color: grey;
+    font-size: 12px;
+}
+.looking-items,.skill-list,.role-list{
+    display: flex;
+}
+.items{
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgba(128, 128, 128, 0.295);
+    margin-left: 30px;
+    margin-right: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.job-text{
+    margin-left: 30px;
+    max-width: 1100px;
+}

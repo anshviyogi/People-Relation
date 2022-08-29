@@ -1,0 +1,10 @@
+.showAllFriends{
+    margin-left: 20px;
+    margin-top: 45px;
+}
+
+.friendList-info{
+    border-radius: 15px;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
